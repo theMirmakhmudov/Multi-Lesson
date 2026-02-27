@@ -19,7 +19,7 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SERVER_SSH_KEY }}
           script: |
-            cd ~/Multi
+            cd /opt/apps/Multi
             if [ ! -d "Multi-Lesson" ]; then
               git clone https://github.com/theMirmakhmudov/Multi-Lesson.git
             else
